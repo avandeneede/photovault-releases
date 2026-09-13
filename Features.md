@@ -19,6 +19,13 @@ Photos Vault is the durable archive underneath it.
   photos/videos, favourites or album — with a live count of what is already protected.
 - **Resumable**: quit, sleep, unplug — the queue is persistent and picks up where it left
   off. The file in progress simply restarts.
+- **Follows Photos**: new items, edits and deletions are picked up from Photos' own change
+  history, without rescanning the library. New photos and videos join the backup as they
+  arrive (optional).
+- **Progress you can read**: throughput, time left, and for the file in progress a
+  milestone track — read, copy, verify, done.
+- **Problems, not mysteries**: files that failed after several attempts are listed with the
+  reason; retry or skip them. Files that are skipped stay out of the counts.
 
 ## Storage copies
 
@@ -34,8 +41,12 @@ Photos Vault is the durable archive underneath it.
   healthy copy. A damaged *source* is caught before it can spread.
 - **Discovery**: copies on connected disks and shares are found automatically; file
   servers on the local network are listed with a one-click Connect.
-- **Vault Service**: a Mac can serve a copy over HTTPS (`photosvault serve`) so another
-  household can back up to it — token access, roles, certificate pinning.
+- **Vault Service**: a Mac can serve a copy over HTTPS (`photosvault serve`, or as a
+  background service with `photosvault service install`) so another household can back up
+  to it — token access, roles, certificate pinning.
+- **Knows what it is**: each copy shows whether it is on this Mac, an external disk, a
+  network share (and on which server) or a Vault Service, with its path and free space.
+  Copies can be renamed or removed (the files stay).
 
 ## Deduplication
 
@@ -50,7 +61,8 @@ Photos Vault is the durable archive underneath it.
   not copies, so it costs nothing. Live Photo pairs sit side by side. Files open in
   Finder, Quick Look, Preview and Photos.
 - **Restore**: any Library selection can be written back to a folder as real files, from
-  the fastest connected copy.
+  the fastest connected copy — existing files are never overwritten — or re-imported
+  **into Photos** with its favourites and albums.
 
 ## Several family members
 
@@ -61,11 +73,16 @@ Photos Vault is the durable archive underneath it.
 - Every Mac keeps a journal of what it learnt on every copy it reaches. Macs merge each
   other's journals, so a member's photos end up on everyone's copies, even when the Macs
   are never online at the same time.
+- Favourites, hidden state and album membership travel with the photo, per member, so a
+  restore into Photos puts them back.
 
 ## Security
 
 - **Transport**: HTTPS with certificate pinning to a Vault Service; tokens in the Keychain.
 - **App lock**: optional Touch ID or password to open the window.
+- **Signed journals**: every Mac signs what it writes (Ed25519); a line another Mac cannot
+  verify is ignored. A Vault Service accepts a replacement of an existing file only from
+  an owner or admin.
 - **Optional media encryption**, chosen when a Vault is created: AES-256-GCM in
   authenticated chunks, key derived from a family passphrase (PBKDF2-SHA256) and kept in
   the Keychain. Copies verify by decrypting; a Vault Service stores ciphertext it cannot
@@ -77,8 +94,11 @@ Photos Vault is the durable archive underneath it.
   is closed, and can open at login.
 - The menu bar shows the state at a glance (protected · backing up · waiting for storage
   · needs attention) with a one-click pause/resume.
-- Activity keeps a history of what was stored, learnt and repaired.
-- Updates install themselves from GitHub releases.
+- Activity keeps a history of what was stored, learnt and repaired; filter it to problems
+  or search it.
+- Notifications when a copy is connected, up to date or disconnected, and when something
+  needs you. Optional: pause on battery, limit copy speed.
+- Updates install themselves from GitHub releases. Available in English and French.
 
 ## What it never does
 

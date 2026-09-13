@@ -79,8 +79,43 @@ address, the token, and the certificate fingerprint the service printed.
 
 ## 7. Get something back
 
-**Library** → filter → **Restore Selection…** writes the originals into a folder of your
-choice, as real files grouped by month, from the fastest connected copy.
+**Library** → filter → **Restore…**:
+
+- **To a Folder…** writes the originals as real files grouped by month, from the fastest
+  connected copy. Existing files are never overwritten.
+- **Back Into Photos…** re-imports them into your Photos library with their favourite state
+  and albums (matched by name). Photos does not detect items that are already there, so
+  only do this for items you actually lost.
+
+## 8. Day to day
+
+- New photos join the backup by themselves (Settings → *Protect new photos and videos as
+  they arrive*); edits and deletions are tracked too, without rescanning.
+- **Problems** lists files that failed after several attempts, with the reason. *Retry* or
+  *Skip*. The Overview links there when something needs you.
+- Right-click a copy → **Verify Integrity** re-reads everything on it; anything damaged is
+  repaired from another copy.
+- Settings: pause on battery, limit copy speed, notifications, Touch ID lock, updates.
+
+## A typical setup: NAS + external disk
+
+1. Add the NAS share as the first copy; let the first backup run overnight.
+2. Add an external disk as the second copy: it fills **from the NAS**, not from iCloud, at
+   disk speed. Keep it in a drawer; plug it in once a month — it catches up in minutes
+   and tells you when it is up to date.
+3. If the NAS dies, the disk holds everything; if the disk is stolen, the NAS does. A new
+   NAS is just a new copy: it fills from the disk.
+
+## When things go wrong
+
+| You see | It means | What to do |
+|---|---|---|
+| *Not connected* | The disk is unplugged or the NAS is out of reach | Nothing. It catches up when back. |
+| *Waiting for storage* on files | No connected copy can take them right now | Connect a copy. |
+| *Full* | The disk has no room left | Free space or add a bigger copy; other copies keep working. |
+| *Needs attention* on a copy | Wrong passphrase, wrong Vault, rejected token, changed certificate | Read the detail on the row; usually enter the passphrase or re-add the copy. |
+| A file in **Problems** | Photos could not hand it over, or the copy refused it | Retry later; skip if the item is gone for good. |
+| *Photos no longer remembers what changed* | The Mac was away too long | Library → Entire Library, once. |
 
 ## Where things live
 

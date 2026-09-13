@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.1.0
+
+- New photos, edits and deletions in Photos are picked up automatically, without rescanning.
+- Problems view: failed files with the reason; retry or skip them.
+- Throughput and time-left estimates on backups and scans.
+- Restore back into Photos, with favourites and albums; restore to a folder never overwrites.
+- Journal events are signed per Mac; forged or tampered lines are rejected.
+- Vault Service can run in the background (`photosvault service install`), replacing an object needs owner/admin, request bodies are capped.
+- Notifications for connected/up-to-date/disconnected copies and problems; pause on battery; copy speed limit.
+- Storage copies show what they are (this Mac, external disk, network share, service), their capacity, and can be renamed or removed.
+- Milestone track per file; one progress track with checkmarked steps.
+- Statistics computed off the main thread; nearby-copy discovery on mount events.
+- French localization; VoiceOver labels; activity filter and search.
+
 ## 1.0.1
 
 - Updates now come from the public releases repository, so installed apps can check for and install new versions.
