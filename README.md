@@ -5,11 +5,11 @@ to storage you own — external disks, a NAS, a Mac in another house — and kee
 copies complete, verified and in sync. Apple Photos stays your photo app; Photos Vault is
 the durable archive underneath it.
 
-**Current version: 1.2.0** · macOS 26 or later
+**Current version: 1.2.1** · macOS 26 or later
 
 ## Download
 
-[**PhotosVault-1.2.0.dmg**](https://github.com/avandeneede/photovault-releases/releases/latest/download/PhotosVault-1.2.0.dmg)
+[**PhotosVault-1.2.1.dmg**](https://github.com/avandeneede/photovault-releases/releases/latest/download/PhotosVault-1.2.1.dmg)
 — open it and drag *Photos Vault* to Applications.
 
 The app is signed but not notarized through Apple's developer program, so macOS blocks the

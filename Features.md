@@ -57,9 +57,10 @@ Photos Vault is the durable archive underneath it.
 
 ## Browsing the backup
 
-- A `Browse/` folder on each copy shows the archive as `2024/03/IMG_1023.HEIC` — links,
-  not copies, so it costs nothing. Live Photo pairs sit side by side. Files open in
-  Finder, Quick Look, Preview and Photos.
+- A `Browse/` folder on each copy shows the archive as `Anthony/2024/03/IMG_1023.HEIC` —
+  one folder per family member with only their own photos; links, not copies, so it costs
+  nothing. Live Photo pairs sit side by side. Files open in Finder, Quick Look, Preview
+  and Photos.
 - **Restore**: any Library selection can be written back to a folder as real files, from
   the fastest connected copy — existing files are never overwritten — or re-imported
   **into Photos** with its favourites and albums.

@@ -58,9 +58,10 @@ waiting for it. Plug it back in: it catches up by itself.
 
 ## 5. Look at what is there
 
-Right-click a copy → **Open Browse Folder in Finder**. Your photos are laid out by year and
-month with their original names. Right-click → **Verify Integrity** re-reads every file on
-that copy and repairs anything damaged from another copy.
+Right-click a copy → **Open Browse Folder in Finder**. Inside, one folder per family
+member: yours holds your photos, laid out by year and month with their original names,
+and nobody else's. Right-click → **Verify Integrity** re-reads every file on that copy and
+repairs anything damaged from another copy.
 
 ## 6. Bring in the family
 

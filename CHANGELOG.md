@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1
+
+- Browse folder: one folder per family member (`Browse/Anthony/2024/03/…`), each holding only that person's photos. Existing trees are rebuilt automatically in the background the next time the copy is seen; the old year folders are cleaned up (links only — anything else left there stays). Every member's Mac needs this version: an older one keeps writing the old layout until it updates.
+- The backup no longer drops to one file at a time at the end of every batch of 50.
+- The window reliably opens at launch (the menu bar icon could appear before the window scene was ready).
+
 ## 1.2.0
 
 - Several files are copied at once (Settings → Backup, default 4): on a NAS with iCloud originals, many times the throughput of 1.1.
