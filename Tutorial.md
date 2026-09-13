@@ -60,8 +60,10 @@ waiting for it. Plug it back in: it catches up by itself.
 
 Right-click a copy → **Open Browse Folder in Finder**. Inside, one folder per family
 member: yours holds your photos, laid out by year and month with their original names,
-and nobody else's. Right-click → **Verify Integrity** re-reads every file on that copy and
-repairs anything damaged from another copy.
+and nobody else's. **Vault** shows for each member how many of their protected files are
+in that folder (*Show in Finder* opens it); **Check Browse Folder** (right-click a copy)
+verifies every link on disk and repairs missing ones. Right-click → **Verify Integrity**
+re-reads every file on that copy and repairs anything damaged from another copy.
 
 ## 6. Bring in the family
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.3
+
+- Updates are checked at every launch (and hourly while the app runs): a newer version is proposed right away instead of once a day.
+- Browse integrity: the Vault view shows, per member and per copy, how many protected files are in `Browse/<member>/`, with *Show in Finder*; *Check Browse Folder* (right-click a copy, replaces *Rebuild*) verifies every link on disk, relinks missing ones and reports per member.
+
 ## 1.2.2
 
 - A Mac that joins a Vault backs up its own photos first; other members' files (copied between copies) come after.

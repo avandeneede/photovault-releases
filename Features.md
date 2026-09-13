@@ -61,6 +61,9 @@ Photos Vault is the durable archive underneath it.
   one folder per family member with only their own photos; links, not copies, so it costs
   nothing. Live Photo pairs sit side by side. Files open in Finder, Quick Look, Preview
   and Photos.
+- **Browse integrity**: the Vault view shows, per member and per copy, how many protected
+  files are in their folder; *Check Browse Folder* (right-click a copy) verifies every
+  link on disk, relinks what is missing and reports per member.
 - **Restore**: any Library selection can be written back to a folder as real files, from
   the fastest connected copy — existing files are never overwritten — or re-imported
   **into Photos** with its favourites and albums.
@@ -101,7 +104,8 @@ Photos Vault is the durable archive underneath it.
   or search it.
 - Notifications when a copy is connected, up to date or disconnected, and when something
   needs you. Optional: pause on battery, limit copy speed.
-- Updates install themselves from GitHub releases. Available in English and French.
+- Updates: checked at every launch and hourly; a newer version is proposed as soon as it
+  exists. Available in English and French.
 
 ## What it never does
 
