@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.2
+
+- A Mac that joins a Vault backs up its own photos first; other members' files (copied between copies) come after.
+- A file another member's Mac has verified on a copy counts as protected there at once — no second read-back of the whole Vault by every Mac.
+- Browse links are completed every pass in the background (files verified by another Mac, a member who joined), and old top-level year folders are swept until every Mac is on the new layout.
+
 ## 1.2.1
 
 - Browse folder: one folder per family member (`Browse/Anthony/2024/03/…`), each holding only that person's photos. Existing trees are rebuilt automatically in the background the next time the copy is seen; the old year folders are cleaned up (links only — anything else left there stays). Every member's Mac needs this version: an older one keeps writing the old layout until it updates.
