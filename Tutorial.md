@@ -47,9 +47,11 @@ Click **Add to Backup** in the toolbar:
 ## 4. Let it run
 
 Backups run automatically while the app is open. The **Overview** shows one line that
-tells you where you stand — *Fully Protected*, *Protected on 1 of 2 Copies*, *Waiting for
-Storage* — with progress and the file being copied. Close the window; the app keeps going
-from the menu bar. Settings → *Open Photos Vault at login* makes it permanent.
+tells you where you stand — *Fully Protected*, *Protected on 1 of 2 Copies*, *No Storage
+Copy Connected* — with progress and the files being copied (a few at a time, each on its
+own track). Close the window: the Dock icon goes away and the app keeps going from the
+menu bar icon next to the clock. Settings → General → *Open Photos Vault at login* makes
+it permanent: after a restart there is only the icon, and it backs up on its own.
 
 Unplug the disk in the middle: the copy shows *Not connected* and the number of items
 waiting for it. Plug it back in: it catches up by itself.

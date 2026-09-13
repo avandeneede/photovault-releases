@@ -90,10 +90,12 @@ Photos Vault is the durable archive underneath it.
 
 ## Living with it
 
-- Runs automatically while the app is open, keeps going in the menu bar when the window
-  is closed, and can open at login.
-- The menu bar shows the state at a glance (protected · backing up · waiting for storage
+- Runs automatically. Close the window and the app becomes a menu bar icon (no Dock
+  icon) that keeps backing up; open at login and it starts that way. Both are settings.
+- The menu bar shows the state at a glance (protected · backing up · no copy connected
   · needs attention) with a one-click pause/resume.
+- Several files travel at once (four by default, adjustable): the wait for each iCloud
+  download and each round trip to a NAS overlaps instead of adding up.
 - Activity keeps a history of what was stored, learnt and repaired; filter it to problems
   or search it.
 - Notifications when a copy is connected, up to date or disconnected, and when something

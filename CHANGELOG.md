@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.2.0
+
+- Several files are copied at once (Settings → Backup, default 4): on a NAS with iCloud originals, many times the throughput of 1.1.
+- Fixed a stall at the start of every pass that grew with the number of files on the copy (a rename check that touched every object over the share); on a large Vault the app spent most of its time there.
+- Fixed the window freezing for up to a minute when the Library count ran on a large library; the count itself went from minutes to about a second, and the catalog now uses WAL so reads and writes no longer queue behind each other.
+- Close the window and Photos Vault becomes a menu bar icon with no Dock icon (Settings → General, on by default); launched at login it starts that way. "Open at login" moved to Settings → General.
+- A distinct icon and message when no storage copy is connected.
+- No more Keychain password dialogs: the Mac's signing key moved to a file under Application Support (migrated automatically).
+- Blocking disk and share I/O runs on its own threads; the speed limit applies to the total, not per file.
+- Overview: one track per file in flight, fixed in number so the card keeps its height; every step is shown (Verify and Done were too fast to see); the toolbar button no longer flashes.
+- Storage Copies and Vault views use grouped sections; the Vault ID has a copy button.
+
 ## 1.1.0
 
 - New photos, edits and deletions in Photos are picked up automatically, without rescanning.
