@@ -40,13 +40,13 @@ ever refuses that password, the copy shows **Connect** to ask for it again.
 
 ## 3. Choose what to protect
 
-Click **Add to Backup** in the toolbar:
+On first launch the Overview offers **Add Recent 200 Items**, to see it work in a minute,
+and **Choose…**, which opens **Library → Selection**. There:
 
-- **Recent 200 Items** to see it work in a minute,
-- **Entire Library** for everything (a first pass over a large library takes a few
-  minutes; Photos itself limits how fast originals can be listed),
-- **Custom Selection…** opens **Library**, where you can filter by date, kind, favourites
-  or album and see how many items are already protected before adding the rest.
+- **Recent 200**, **Recent 2,000** or **Entire Library** (a first pass over a large library
+  takes a few minutes; Photos itself limits how fast originals can be listed),
+- or filter by kind, favourites, album and dates, see how many items are already
+  protected, and add the rest.
 
 ## 4. Let it run
 
@@ -65,8 +65,8 @@ waiting for it. Plug it back in: it catches up by itself.
 
 ## 5. Look at what is there
 
-**Overview → Browse Your Photos in the Vault → Open** shows what is in the Vault in a
-window of the app, the way Photos does: years, months, favourites, places, albums and media types, with a
+**Library** shows what is in the Vault, the way Photos does (**Overview → Browse Your
+Photos in the Vault → Open** takes you there with the latest photos): years, months, favourites, places, albums and media types, with a
 viewer for photos, videos and Live Photos (its Download button saves the original into
 Downloads). The app serves this page from your Mac, so it is quick; the originals you open
 come from the copy. Without the app — a new Mac, someone
@@ -102,7 +102,7 @@ address, the token, and the certificate fingerprint the service printed.
 
 ## 7. Get something back
 
-**Library** → filter → **Restore…**:
+**Library → Selection** → filter → **Restore…**:
 
 - **To a Folder…** writes the originals as real files grouped by month, from the fastest
   connected copy. Existing files are never overwritten.

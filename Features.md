@@ -70,8 +70,7 @@ Photos Vault is the durable archive underneath it.
   media types (Videos, Selfies, Live Photos, Portrait, Panoramas, Slo-mo, Time-lapse,
   Bursts, Screenshots, RAW…) and Hidden behind a confirmation — with a viewer that plays
   videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open** (or
-  right-click a copy → *Open Photos Page*) shows it in a window of the app, served from this
-  Mac: the list comes from the catalog, thumbnails from the previews Photos keeps on the
+  right-click a copy → *Open Photos Page*) shows it in **Library**, served from this Mac: the list comes from the catalog, thumbnails from the previews Photos keeps on the
   Mac, and only the originals you open are read from the copy — quick even on a slow NAS.
   It is reachable from this Mac only, behind a secret address that changes at every
   launch. The page also lives on the copy, so it works with no app at all: open
@@ -85,7 +84,7 @@ Photos Vault is the durable archive underneath it.
 - **Browse integrity**: the Vault view shows, per member and per copy, how many protected
   files are in their folder; *Check Browse Folder* (right-click a copy) verifies every
   link on disk, relinks what is missing and reports per member.
-- **Restore**: any Library selection can be written back to a folder as real files, from
+- **Restore**: any selection (Library → Selection) can be written back to a folder as real files, from
   the fastest connected copy — existing files are never overwritten — or re-imported
   **into Photos** with its favourites and albums.
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.9
+
+- Your photos in the Vault are in **Library** now, where you would look for them, instead of a window of their own: Library opens on them, and a *Photos in the Vault | Selection* switch in the toolbar leads to the tools that choose what to back up and restore. Overview → *Open* and a copy's *Open Photos Page* take you there with the latest photos. Leaving Library and coming back finds the page where you left it.
+
 ## 1.4.8
 
 - Your photos in the Vault open in a window of Photos Vault (“Photos in the Vault”) instead of a Safari tab: same page, same speed, and its secret address no longer lands in Safari's history. The viewer's Download button saves the original into Downloads. The page on the copy still opens in any browser without the app.
