@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.4.0
+
+- Each file in flight has its own small buffer (8 MB) and writer: Photos hands every file's data over on one queue, and a slow write to the share made right there could hold back the other files' data.
+- Faster on a NAS: about 14 filesystem round trips per file instead of 35 (one open to create the partial, one listing instead of several checks at commit, manifest lines written in batches, Browse links made in the background, free space measured once a minute). Measured with 80 ms per round trip: 813 → 323 ms per file with 4 files at a time.
+- The journal is exchanged every minute during a backup instead of only at the start and end of a pass (which could last days), read in chunks and merged in batches; one publisher per Mac, which ends the duplicate lines written at launch. Lines another Mac's journal had wrong are reported once per pass in Activity.
+- Another member's files that no connected copy holds are set aside instead of being touched one by one on every pass.
+- The Vault trusts its owner first: a new Mac's journal is only applied once the owner's Mac approves it (Vault → *Waiting for approval*, with a key fingerprint to compare). Existing Macs keep working as before. A Mac speaks only for its own user and the photos it announced.
+- Fixed: about 1 event in 2,000 had a signature the other Mac rejected (rounded timestamps), and such a line could stall merging that journal.
+- A copy whose encryption setting changes on the share is refused; Vault Service addresses must be https.
+- The Photos page appears at once on its first build (tiles fill in as thumbnails are written) instead of after all thumbnails.
+- The app is signed with the hardened runtime: other software can no longer inject code into it to borrow its Photos access.
+- Progress you can read: the menu bar shows how far your photos are on the copy (“36 %”) until they all are, and the menu bar panel and Overview say “Your photos on photovault — 35,334 of 98,902 files · 100 GB of 497 GB”, the time left measured over the last minutes, and each other member's progress (sent by their own Mac). Before, one bar mixed every member's files on every copy.
+- Built against macOS 27; capture warnings from the Swift 6.4 toolchain fixed.
+
 ## 1.3.0
 
 - The NAS reconnects by itself: a copy on a network share that is not mounted is mounted silently with the password saved in the Keychain as soon as its server is on the network (and after the Mac wakes). A *Connect* button sits on the copy; if the server refuses the saved password, automatic attempts stop (so the NAS never blocks the account) and the button asks for it once.
