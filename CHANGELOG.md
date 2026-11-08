@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.10
+
+- Photos deleted from Photos stay visible in the Vault: the Photos page used to list only what was still in Photos, so a photo you deleted — or a whole library wiped — vanished from Library although its original was safe on the copy. They now have their own collection, *Removed from Photos* (under Utilities), out of the main library, favourites, albums and places. “Out of N” still counts what is in Photos.
+
 ## 1.4.9
 
 - Your photos in the Vault are in **Library** now, where you would look for them, instead of a window of their own: Library opens on them, and a *Photos in the Vault | Selection* switch in the toolbar leads to the tools that choose what to back up and restore. Overview → *Open* and a copy's *Open Photos Page* take you there with the latest photos. Leaving Library and coming back finds the page where you left it.

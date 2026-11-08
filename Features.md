@@ -68,8 +68,9 @@ Photos Vault is the durable archive underneath it.
 - **Photos page**: `<member> – Photos.html` at the root of each copy shows that member's protected
   photos the way Photos does — Years, Months and All Items, Favourites, Places, Albums,
   media types (Videos, Selfies, Live Photos, Portrait, Panoramas, Slo-mo, Time-lapse,
-  Bursts, Screenshots, RAW…) and Hidden behind a confirmation — with a viewer that plays
-  videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open** (or
+  Bursts, Screenshots, RAW…), Hidden behind a confirmation, and *Removed from Photos*:
+  what was deleted from Photos since it was backed up, still in the Vault — with a viewer
+  that plays videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open** (or
   right-click a copy → *Open Photos Page*) shows it in **Library**, served from this Mac: the list comes from the catalog, thumbnails from the previews Photos keeps on the
   Mac, and only the originals you open are read from the copy — quick even on a slow NAS.
   It is reachable from this Mac only, behind a secret address that changes at every

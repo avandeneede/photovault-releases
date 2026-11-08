@@ -73,6 +73,11 @@ come from the copy. Without the app — a new Mac, someone
 else's computer — open `<your name> – Photos.html` at the root of the copy in Safari: the
 same page, read straight from the share (slower).
 
+None of this needs Apple or the Internet: the list comes from the catalog on your Mac and
+the photos from the copy, over your home network. A photo deleted from Photos — by you, or
+all at once if a library is wiped — stays in the Vault and moves to **Removed from Photos**
+in the page's sidebar, out of the way of the others.
+
 Right-click a copy → **Open Browse Folder in Finder**. Inside, one folder per family
 member: yours holds your photos, laid out by year and month with their original names,
 and nobody else's. **Vault** shows for each member how many of their protected files are
