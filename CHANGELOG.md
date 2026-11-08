@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.4
+
+- The iCloud → Mac → copy flow is balanced: three equal steps, arrows on the icons' line, the copy shown as its percentage and size (no second progress bar), the time left centred.
+- Files queued behind another iCloud download say “Waiting for iCloud” instead of “0 %”; the iCloud step counts files downloading and waiting separately.
+- The Overview has a “Browse Your Photos in the Vault” card: Open shows your Photos page (years, albums, places…) in Safari straight from the copy.
+- The Vault section opens at once: it no longer reads the copy's settings from the NAS on every redraw (once per member), which froze the window while the share answered.
+
 ## 1.4.3
 
 - The Overview shows where your photos are on their way: iCloud → this Mac → each copy, with what is still only in iCloud, what is on the Mac ready to send, each copy's share already backed up (a copy can be partly done, or away and catching up later), and the download and upload speeds on the arrows.
