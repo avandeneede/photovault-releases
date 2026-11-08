@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.2
+
+- iCloud downloads are visible: a file whose original is only in iCloud shows “Downloading from iCloud 45 % · 2 MB/s” while Photos fetches it (often the whole video before the first byte reaches the copy) instead of “0 bytes”; the Overview and menu bar panel show the total iCloud download speed and how much of what is left is still only in iCloud.
+
 ## 1.4.1
 
 - Speeds you can see: each file being copied shows its own speed next to its size, “Your photos on photovault” shows what this Mac is actually sending (big videos in progress included, so it is known after half a minute instead of only once files finish) and the time left from it, and each other member's row shows their speed, measured from their journal.
