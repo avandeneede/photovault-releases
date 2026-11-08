@@ -65,10 +65,11 @@ waiting for it. Plug it back in: it catches up by itself.
 
 ## 5. Look at what is there
 
-**Overview → Browse Your Photos in the Vault → Open** shows what is in the Vault in Safari,
-the way Photos does: years, months, favourites, places, albums and media types, with a
-viewer for photos, videos and Live Photos. The app serves this page from your Mac, so it
-is quick; the originals you open come from the copy. Without the app — a new Mac, someone
+**Overview → Browse Your Photos in the Vault → Open** shows what is in the Vault in a
+window of the app, the way Photos does: years, months, favourites, places, albums and media types, with a
+viewer for photos, videos and Live Photos (its Download button saves the original into
+Downloads). The app serves this page from your Mac, so it is quick; the originals you open
+come from the copy. Without the app — a new Mac, someone
 else's computer — open `<your name> – Photos.html` at the root of the copy in Safari: the
 same page, read straight from the share (slower).
 
