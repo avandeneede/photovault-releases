@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.5
+
+- The Photos page shows its pictures in Safari: it now sits at the root of the copy (“Anthony – Photos.html”), because Safari lets a page opened from a file read only its own folder and those below it — from Browse/<member>/ it could not reach the thumbnails or the originals. The old page in Browse/<member>/ is removed.
+- Thumbnails are made newest first, since the page opens on the most recent photos.
+
 ## 1.4.4
 
 - The iCloud → Mac → copy flow is balanced: three equal steps, arrows on the icons' line, the copy shown as its percentage and size (no second progress bar), the time left centred.

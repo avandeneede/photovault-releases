@@ -61,7 +61,7 @@ Photos Vault is the durable archive underneath it.
 
 ## Browsing the backup
 
-- **Photos page**: `Browse/<member>/Photos.html` on each copy shows that member's protected
+- **Photos page**: `<member> – Photos.html` at the root of each copy shows that member's protected
   photos the way Photos does — Years, Months and All Items, Favourites, Places, Albums,
   media types (Videos, Selfies, Live Photos, Portrait, Panoramas, Slo-mo, Time-lapse,
   Bursts, Screenshots, RAW…) and Hidden behind a confirmation — with a viewer that plays
