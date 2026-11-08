@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1
+
+- Speeds you can see: each file being copied shows its own speed next to its size, “Your photos on photovault” shows what this Mac is actually sending (big videos in progress included, so it is known after half a minute instead of only once files finish) and the time left from it, and each other member's row shows their speed, measured from their journal.
+
 ## 1.4.0
 
 - Each file in flight has its own small buffer (8 MB) and writer: Photos hands every file's data over on one queue, and a slow write to the share made right there could hold back the other files' data.
