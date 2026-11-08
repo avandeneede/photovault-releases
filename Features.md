@@ -41,6 +41,10 @@ Photos Vault is the durable archive underneath it.
   healthy copy. A damaged *source* is caught before it can spread.
 - **Discovery**: copies on connected disks and shares are found automatically; file
   servers on the local network are listed with a one-click Connect.
+- **Reconnects by itself**: a copy on a NAS share is mounted silently, with the password
+  saved in the Keychain, whenever its server is on the network — no trip to Finder. If the
+  NAS refuses that password, the app stops trying (so the account is never locked) and the
+  copy's *Connect* button asks for it once.
 - **Vault Service**: a Mac can serve a copy over HTTPS (`photosvault serve`, or as a
   background service with `photosvault service install`) so another household can back up
   to it — token access, roles, certificate pinning.
@@ -57,6 +61,14 @@ Photos Vault is the durable archive underneath it.
 
 ## Browsing the backup
 
+- **Photos page**: `Browse/<member>/Photos.html` on each copy shows that member's protected
+  photos the way Photos does — Years, Months and All Items, Favourites, Places, Albums,
+  media types (Videos, Selfies, Live Photos, Portrait, Panoramas, Slo-mo, Time-lapse,
+  Bursts, Screenshots, RAW…) and Hidden behind a confirmation — with a viewer that plays
+  videos and Live Photos. It opens in Safari straight from the share: no app, no server,
+  no network access, and it reads the originals in `objects/` directly. Each Mac keeps its
+  own user's page current; right-click a copy → *Open Photos Page*. (People are not
+  available: Photos does not share faces with other apps.)
 - A `Browse/` folder on each copy shows the archive as `Anthony/2024/03/IMG_1023.HEIC` —
   one folder per family member with only their own photos; links, not copies, so it costs
   nothing. Live Photo pairs sit side by side. Files open in Finder, Quick Look, Preview

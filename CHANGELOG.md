@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0
+
+- The NAS reconnects by itself: a copy on a network share that is not mounted is mounted silently with the password saved in the Keychain as soon as its server is on the network (and after the Mac wakes). A *Connect* button sits on the copy; if the server refuses the saved password, automatic attempts stop (so the NAS never blocks the account) and the button asks for it once.
+- Photos page: each member gets `Browse/<member>/Photos.html` on the copy — their protected photos browsable like in Photos (Years, Months, All Items, Favourites, Places, Albums, media types such as Live Photos, Portrait, Selfies, Videos, and Hidden behind a confirmation). It opens in Safari straight from the share, without the app or any server, and reads the originals in `objects/` directly. Thumbnails live in `metadata/thumbnails/`. Each Mac writes its own user's page, refreshed every half hour while the copy is connected; right-click a copy → *Open Photos Page*.
+- Size, duration, location and media type of each photo are read from Photos, place names are looked up per ~10 km area, and favourites and albums of photos catalogued before 1.1 are recorded (and shared through the Vault journal like any other metadata).
+- Security: another Mac's journal can no longer mark one of this Mac's own files as protected (a forged line could have made the app skip copying it), and file extensions from the journal are validated before they are used in a path.
+
 ## 1.2.3
 
 - Updates are checked at every launch (and hourly while the app runs): a newer version is proposed right away instead of once a day.
