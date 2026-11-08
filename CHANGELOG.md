@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.3
+
+- The Overview shows where your photos are on their way: iCloud → this Mac → each copy, with what is still only in iCloud, what is on the Mac ready to send, each copy's share already backed up (a copy can be partly done, or away and catching up later), and the download and upload speeds on the arrows.
+- Only your own progress is on the Overview and in the menu bar; each member's progress on every copy, with their speed, is in the Vault section.
+
 ## 1.4.2
 
 - iCloud downloads are visible: a file whose original is only in iCloud shows “Downloading from iCloud 45 % · 2 MB/s” while Photos fetches it (often the whole video before the first byte reaches the copy) instead of “0 bytes”; the Overview and menu bar panel show the total iCloud download speed and how much of what is left is still only in iCloud.
