@@ -22,8 +22,12 @@ Photos Vault is the durable archive underneath it.
 - **Follows Photos**: new items, edits and deletions are picked up from Photos' own change
   history, without rescanning the library. New photos and videos join the backup as they
   arrive (optional).
-- **Progress you can read**: throughput, time left, and for the file in progress a
-  milestone track — read, copy, verify, done.
+- **Progress you can read**: the Overview shows your photos on their way — iCloud → this
+  Mac → each copy — with what is still only in iCloud (Photos downloads it first), what is
+  ready to send, each copy's share already backed up, the download and upload speeds and
+  the time left. Each file in flight shows its speed (or its iCloud download) and a
+  milestone track — read, copy, verify, done. Each family member's progress and speed on
+  every copy are in the Vault section.
 - **Problems, not mysteries**: files that failed after several attempts are listed with the
   reason; retry or skip them. Files that are skipped stay out of the counts.
 
@@ -65,9 +69,14 @@ Photos Vault is the durable archive underneath it.
   photos the way Photos does — Years, Months and All Items, Favourites, Places, Albums,
   media types (Videos, Selfies, Live Photos, Portrait, Panoramas, Slo-mo, Time-lapse,
   Bursts, Screenshots, RAW…) and Hidden behind a confirmation — with a viewer that plays
-  videos and Live Photos. It opens in Safari straight from the share: no app, no server,
-  no network access, and it reads the originals in `objects/` directly. Each Mac keeps its
-  own user's page current; right-click a copy → *Open Photos Page*. (People are not
+  videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open** (or
+  right-click a copy → *Open Photos Page*) shows it in Safari, served by the app from this
+  Mac: the list comes from the catalog, thumbnails from the previews Photos keeps on the
+  Mac, and only the originals you open are read from the copy — quick even on a slow NAS.
+  It is reachable from this Mac only, behind a secret address that changes at every
+  launch. The page also lives on the copy, so it works with no app at all: open
+  `<member> – Photos.html` from the share in Safari (slower — everything is then read
+  through the share). Each Mac keeps its own user's page current. (People are not
   available: Photos does not share faces with other apps.)
 - A `Browse/` folder on each copy shows the archive as `Anthony/2024/03/IMG_1023.HEIC` —
   one folder per family member with only their own photos; links, not copies, so it costs
@@ -109,7 +118,8 @@ Photos Vault is the durable archive underneath it.
 - Runs automatically. Close the window and the app becomes a menu bar icon (no Dock
   icon) that keeps backing up; open at login and it starts that way. Both are settings.
 - The menu bar shows the state at a glance (protected · backing up · no copy connected
-  · needs attention) with a one-click pause/resume.
+  · needs attention), and while a backup runs the share of your photos already on the
+  copy, with a one-click pause/resume.
 - Several files travel at once (four by default, adjustable): the wait for each iCloud
   download and each round trip to a NAS overlaps instead of adding up.
 - Activity keeps a history of what was stored, learnt and repaired; filter it to problems

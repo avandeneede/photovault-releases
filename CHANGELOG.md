@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.4.7
+
+- The Photos page opens in a second: the app now serves it from this Mac instead of Safari reading it from the share. Its list comes from the catalog (half a second, instead of 13–15 s over Wi-Fi from a busy NAS), its thumbnails from the previews Photos keeps on this Mac (every item has one at once, before the copy's own thumbnails are made), and switching to Favourites, an album or a place is instant: Safari re-checked a page opened from the share on every click, 3–4 s each time. Only an original you open is read from the copy. The page is reachable from this Mac only, behind a secret address that changes at every launch. The page on the copy itself is unchanged and still works without the app.
+- The Photos page's sidebar and content are two matching panels, aligned at the top: no more dark notch above the sidebar.
+
+## 1.4.6
+
+- The backup always starts at launch. The app waited a fixed 3 s for its first status refresh; when that refresh was slower (a large journal from another Mac being merged at the same time) the backup never started, and nothing moved until something else woke it. It now starts as soon as the first refresh can tell what to send.
+- Lines from other Macs' journals are no longer rejected as forged when they were signed one second before the time they carry: versions before 1.4.0 signed the time cut to the second but stored it rounded to the millisecond (about one event in 2,000). The content and the key must still match.
+
 ## 1.4.5
 
 - The Photos page shows its pictures in Safari: it now sits at the root of the copy (“Anthony – Photos.html”), because Safari lets a page opened from a file read only its own folder and those below it — from Browse/<member>/ it could not reach the thumbnails or the originals. The old page in Browse/<member>/ is removed.
