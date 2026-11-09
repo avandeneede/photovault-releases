@@ -28,9 +28,13 @@ Photos Vault is the durable archive underneath it.
   around it. Turn the lock off, then Library → Selection → *Entire Library*, to back them
   up. In the Vault they get no link in `Browse/`, which everyone on the share can open; the
   Photos page lists them under Hidden, behind a confirmation.
-- **Not protected: shared albums.** Items other people put in a shared album are not part of
-  your library, and Photos lists them apart; a shared-album photo you saved to your library
-  is protected like any other.
+- **Shared albums**: an *Entire Library* backup includes the items of the shared albums you
+  follow whose original is not in your library — other people's photos, or yours since
+  deleted. A shared copy of one of your own photos (a reduced version) is left out: the
+  Vault already has its original. They stay out of the library on the Photos page, as in
+  Photos, and are under *Shared Albums* and in their albums.
+- **A full pass once a day** for a library protected as a whole: it adds what Photos' change
+  history does not report (new items of shared albums) or missed.
 - **Progress you can read**: the Overview shows your photos on their way — iCloud → this
   Mac → each copy — with what is still only in iCloud (Photos downloads it first), what is
   ready to send, each copy's share already backed up, the download and upload speeds and

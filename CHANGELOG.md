@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.13
+
+- **Shared albums are backed up.** An *Entire Library* backup now also takes the items of the shared albums you follow whose original is not in your library — other people's photos, or yours since deleted (8,110 of 18,083 shared items on this Mac). A shared copy of one of your own photos, a reduced version of an original the Vault already has, is left out: it has the original's capture time to the millisecond, kind and proportions. On the Photos page they stay out of the library, as in Photos, and are under *Shared Albums* and in their albums.
+- **A full pass once a day** for a library protected as a whole (one where *Entire Library* was run): it adds what Photos' change history does not report — new items of shared albums — or missed. A library protected through a selection is never swept whole.
+
 ## 1.4.12
 
 - Library → Selection works while the backup runs: *Recent 200*, *Entire Library* and *Add … Items to Backup* used to wait for the backup to stop — and in automatic mode it never does, so they stayed greyed out. Items are now added alongside it, and the backup picks them up on its next batch.
