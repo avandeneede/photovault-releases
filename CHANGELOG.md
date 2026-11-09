@@ -1,8 +1,12 @@
 # Changelog
 
+## 1.4.12
+
+- Library → Selection works while the backup runs: *Recent 200*, *Entire Library* and *Add … Items to Backup* used to wait for the backup to stop — and in automatic mode it never does, so they stayed greyed out. Items are now added alongside it, and the backup picks them up on its next batch.
+
 ## 1.4.11
 
-- **Hidden photos are backed up.** The scan listed them, but reading their files asked Photos without including hidden items, so Photos returned nothing and they were silently left out: on this Mac, none of 208 hidden photos had reached the Vault. They are protected now. They get no link in Browse/, which everyone on the share can open; the Photos page lists them under Hidden, behind a confirmation, as before.
+- **Hidden photos can be backed up.** Reading a photo's files asked Photos without including hidden items, so even a hidden photo the scan had listed was left out. That is fixed — but Photos also locks the Hidden album by default (Photos → Settings → General → *Use Touch ID or password*), and while it is locked it hands hidden photos to no app, with no way around it: on this Mac, none of 208 hidden photos are in the Vault for that reason. Turn the lock off, then Library → Selection → *Entire Library*, to back them up. In the Vault they get no link in Browse/, which everyone on the share can open; the Photos page lists them under Hidden, behind a confirmation.
 - **Photos added since the first scan are caught up.** A library scanned before change tracking existed (1.0) had no starting point, so nothing added to Photos afterwards was ever seen — 1,738 photos on this Mac. At launch, one full pass catches up (it only reads what the Vault does not know yet) and sets the starting point; from then on new photos join as they arrive.
 
 ## 1.4.10

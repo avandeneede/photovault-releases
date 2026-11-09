@@ -22,9 +22,12 @@ Photos Vault is the durable archive underneath it.
 - **Follows Photos**: new items, edits and deletions are picked up from Photos' own change
   history, without rescanning the library. New photos and videos join the backup as they
   arrive (optional).
-- **Hidden photos** are protected like the others. They get no link in `Browse/`, which
-  everyone on the share can open (Photos keeps them behind Touch ID); the Photos page lists
-  them under Hidden, behind a confirmation.
+- **Hidden photos** are protected like the others — when Photos lets apps see them. Photos
+  locks the Hidden album by default (Photos → Settings → General → *Use Touch ID or
+  password*), and while it is locked it hands hidden photos to no app: there is no way
+  around it. Turn the lock off, then Library → Selection → *Entire Library*, to back them
+  up. In the Vault they get no link in `Browse/`, which everyone on the share can open; the
+  Photos page lists them under Hidden, behind a confirmation.
 - **Not protected: shared albums.** Items other people put in a shared album are not part of
   your library, and Photos lists them apart; a shared-album photo you saved to your library
   is protected like any other.
