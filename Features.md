@@ -22,6 +22,12 @@ Photos Vault is the durable archive underneath it.
 - **Follows Photos**: new items, edits and deletions are picked up from Photos' own change
   history, without rescanning the library. New photos and videos join the backup as they
   arrive (optional).
+- **Hidden photos** are protected like the others. They get no link in `Browse/`, which
+  everyone on the share can open (Photos keeps them behind Touch ID); the Photos page lists
+  them under Hidden, behind a confirmation.
+- **Not protected: shared albums.** Items other people put in a shared album are not part of
+  your library, and Photos lists them apart; a shared-album photo you saved to your library
+  is protected like any other.
 - **Progress you can read**: the Overview shows your photos on their way — iCloud → this
   Mac → each copy — with what is still only in iCloud (Photos downloads it first), what is
   ready to send, each copy's share already backed up, the download and upload speeds and

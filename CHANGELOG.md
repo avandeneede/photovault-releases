@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.11
+
+- **Hidden photos are backed up.** The scan listed them, but reading their files asked Photos without including hidden items, so Photos returned nothing and they were silently left out: on this Mac, none of 208 hidden photos had reached the Vault. They are protected now. They get no link in Browse/, which everyone on the share can open; the Photos page lists them under Hidden, behind a confirmation, as before.
+- **Photos added since the first scan are caught up.** A library scanned before change tracking existed (1.0) had no starting point, so nothing added to Photos afterwards was ever seen — 1,738 photos on this Mac. At launch, one full pass catches up (it only reads what the Vault does not know yet) and sets the starting point; from then on new photos join as they arrive.
+
 ## 1.4.10
 
 - Photos deleted from Photos stay visible in the Vault: the Photos page used to list only what was still in Photos, so a photo you deleted — or a whole library wiped — vanished from Library although its original was safe on the copy. They now have their own collection, *Removed from Photos* (under Utilities), out of the main library, favourites, albums and places. “Out of N” still counts what is in Photos.
