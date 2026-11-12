@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.17
+
+- **1.4.16's fix now really applies.** It only counted an iCloud download as “sent nothing” if Photos had reported no progress at all, and Photos reports some as it gives up: on this Mac, the 4 shared-album Live Photo videos went on “waiting for network” under 1.4.16. What counts now is the first 3 minutes: no byte and no progress in that time, then a “network” error, is a failed attempt. A real download shows progress within seconds and still waits for the network when it drops.
+
 ## 1.4.16
 
 - **A file iCloud never sends ends up in Problems instead of “waiting” forever.** On this Mac, the Live Photo videos of 4 items in two shared albums (≈ 6 MB) kept coming back as “Waiting for iCloud”: each time, iCloud Shared Albums gave up after 5 minutes without sending a byte, Photos reported it as a network error, and the backup waited for a network that was there and asked again a few minutes later, without end, with the copy stuck at 99 %. An iCloud download that fails as “network” after 3 minutes without a byte or any progress now counts as a failed attempt, like any other: after five, the file is listed in **Problems** with “iCloud sent nothing in 5 min”, where you can retry or skip it. A real network problem still just waits: a request that times out fails within a minute (38 s seen here), and a download cut off halfway had already started arriving. The photos of those 4 items are in the Vault; only their motion is missing.
