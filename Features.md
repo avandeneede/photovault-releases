@@ -90,6 +90,8 @@ Photos Vault is the durable archive underneath it.
   that plays videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open** (or
   right-click a copy → *Open Photos Page*) shows it in **Library**, served from this Mac: the list comes from the catalog, thumbnails from the previews Photos keeps on the
   Mac, and only the originals you open are read from the copy — quick even on a slow NAS.
+  There, the viewer's *Show in Photos* opens the item in Photos (macOS asks once whether
+  Photos Vault may control Photos); Problems has the same button.
   It is reachable from this Mac only, behind a secret address that changes at every
   launch. The page also lives on the copy, so it works with no app at all: open
   `<member> – Photos.html` from the share in Safari (slower — everything is then read

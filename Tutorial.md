@@ -72,7 +72,7 @@ waiting for it. Plug it back in: it catches up by itself.
 **Library** shows what is in the Vault, the way Photos does (**Overview → Browse Your
 Photos in the Vault → Open** takes you there with the latest photos): years, months, favourites, places, albums and media types, with a
 viewer for photos, videos and Live Photos (its Download button saves the original into
-Downloads). The app serves this page from your Mac, so it is quick; the originals you open
+Downloads; *Show in Photos* opens the same item in Photos). The app serves this page from your Mac, so it is quick; the originals you open
 come from the copy. Without the app — a new Mac, someone
 else's computer — open `<your name> – Photos.html` at the root of the copy in Safari: the
 same page, read straight from the share (slower).
@@ -124,7 +124,8 @@ address, the token, and the certificate fingerprint the service printed.
 - New photos join the backup by themselves (Settings → *Protect new photos and videos as
   they arrive*); edits and deletions are tracked too, without rescanning.
 - **Problems** lists files that failed after several attempts, with the reason. *Retry* or
-  *Skip*. The Overview links there when something needs you.
+  *Skip*; *Show in Photos* (or a double-click) opens the item in Photos to look at it. The
+  Overview links there when something needs you.
 - Right-click a copy → **Verify Integrity** re-reads everything on it; anything damaged is
   repaired from another copy.
 - Settings: pause on battery, limit copy speed, notifications, Touch ID lock, updates.
@@ -147,7 +148,7 @@ address, the token, and the certificate fingerprint the service printed.
 | *Full* | The disk has no room left | Free space or add a bigger copy; other copies keep working. |
 | *Needs attention* on a copy | Wrong passphrase, wrong Vault, rejected token, changed certificate | Read the detail on the row; usually enter the passphrase or re-add the copy. |
 | A file in **Problems** | Photos could not hand it over, or the copy refused it | Retry later; skip if the item is gone for good. |
-| *iCloud sent nothing in 5 min* in **Problems** | iCloud no longer serves that file — typically the video of a Live Photo in a shared album | Open the item in Photos: if it plays, *Retry*; if not, *Skip* (the photo itself is usually already in the Vault). |
+| *iCloud sent nothing in 5 min* in **Problems** | iCloud no longer serves that file — typically the video of a Live Photo in a shared album | *Show in Photos* (double-click the row): if it plays there, *Retry*; if not, *Skip* (the photo itself is usually already in the Vault). |
 | *Photos no longer remembers what changed* | The Mac was away too long | Library → Entire Library, once. |
 | *… lines in other members' journals were rejected* | A line claims to come from another member's Mac but its signature does not match | Nothing: those lines are ignored. If the number keeps growing, check who can write to the share. |
 

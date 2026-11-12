@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.19
+
+- **Show in Photos.** From **Problems** (button, right-click, or double-click a row) and from the viewer in **Library**, Photos Vault opens the item in Photos — to check whether a Live Photo still plays before you retry or skip it, or simply to find a photo there. The first time, macOS asks whether Photos Vault may control Photos. It works for items of this Mac's Photos library; another member's file, or a photo deleted from Photos, has no such button. The page on the copy, opened in a browser without the app, does not show it.
+
 ## 1.4.18
 
 - **The Photos page no longer counts more than your library.** Activity said “Photos page updated — 88,305 of 88,104 items”: the first number included the 201 photos deleted from Photos that the Vault keeps (*Removed from Photos*), the second, rightly, did not. Both now count what is still in Photos — “88,104 of 88,104”. The page's own header had the same mix-up and, seeing more items than the total, dropped “out of 88,104” altogether; it shows it again.
