@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.18
+
+- **The Photos page no longer counts more than your library.** Activity said “Photos page updated — 88,305 of 88,104 items”: the first number included the 201 photos deleted from Photos that the Vault keeps (*Removed from Photos*), the second, rightly, did not. Both now count what is still in Photos — “88,104 of 88,104”. The page's own header had the same mix-up and, seeing more items than the total, dropped “out of 88,104” altogether; it shows it again.
+
 ## 1.4.17
 
 - **1.4.16's fix now really applies.** It only counted an iCloud download as “sent nothing” if Photos had reported no progress at all, and Photos reports some as it gives up: on this Mac, the 4 shared-album Live Photo videos went on “waiting for network” under 1.4.16. What counts now is the first 3 minutes: no byte and no progress in that time, then a “network” error, is a failed attempt. A real download shows progress within seconds and still waits for the network when it drops.
