@@ -44,7 +44,9 @@ Photos Vault is the durable archive underneath it.
   milestone track — read, copy, verify, done. Each family member's progress and speed on
   every copy are in the Vault section.
 - **Problems, not mysteries**: files that failed after several attempts are listed with the
-  reason; retry or skip them. Files that are skipped stay out of the counts.
+  reason; retry or skip them. Files that are skipped stay out of the counts. A file iCloud
+  never sends (nothing for minutes, then a “network” error while the network works) is one
+  of them, not an endless “waiting for network”.
 
 ## Storage copies
 
