@@ -31,8 +31,9 @@ Photos Vault is the durable archive underneath it.
 - **Shared albums**: an *Entire Library* backup includes the items of the shared albums you
   follow whose original is not in your library — other people's photos, or yours since
   deleted. A shared copy of one of your own photos (a reduced version) is left out: the
-  Vault already has its original. They stay out of the library on the Photos page, as in
-  Photos, and are under *Shared Albums* and in their albums.
+  Vault already has its original. They are backed up after your library's own photos, so
+  a large shared album never holds yours back. They stay out of the library on the Photos
+  page, as in Photos, and are under *Shared Albums* and in their albums.
 - **A full pass once a day** for a library protected as a whole: it adds what Photos' change
   history does not report (new items of shared albums) or missed.
 - **Progress you can read**: the Overview shows your photos on their way — iCloud → this

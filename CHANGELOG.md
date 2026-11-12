@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.15
+
+- **Your own photos go before shared albums' items.** The backup sent files in the order they were found, so shared albums' items found by an *Entire Library* pass went before photos of your library added later: on this Mac, 78 of your own Live Photo videos (127 MB) waited for 3,000 shared items. Each pass now sends your library's photos first, then shared albums' items, then other members' files.
+
 ## 1.4.14
 
 - **What is left counts shared albums' items.** Photos gives no size for a shared album's item until it is downloaded, and the Overview counted each one as 0 bytes: with about 3,000 of them still to send, it showed “≈ 129 MB only here · About 4 min left” for over an hour while some 3 GB went through — and the 129 MB, this Mac's own photos queued behind them, never moved. Such a file is now counted at the average size of the stored files like it (834 KB for a shared photo, 28 MB for a video on this Mac) until its real size is known, so “only in iCloud”, the percentage and the time left are realistic.

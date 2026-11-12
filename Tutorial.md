@@ -46,7 +46,7 @@ and **Choose…**, which opens **Library → Selection**. There:
 - **Recent 200**, **Recent 2,000** or **Entire Library** (a first pass over a large library
   takes a few minutes; Photos itself limits how fast originals can be listed). Entire
   Library also takes the photos of the shared albums you follow that are not in your
-  library, and keeps everything current with a full pass once a day,
+  library (after your own photos), and keeps everything current with a full pass once a day,
 - or filter by kind, favourites, album and dates, see how many items are already
   protected, and add the rest.
 
