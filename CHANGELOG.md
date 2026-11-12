@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.14
+
+- **What is left counts shared albums' items.** Photos gives no size for a shared album's item until it is downloaded, and the Overview counted each one as 0 bytes: with about 3,000 of them still to send, it showed “≈ 129 MB only here · About 4 min left” for over an hour while some 3 GB went through — and the 129 MB, this Mac's own photos queued behind them, never moved. Such a file is now counted at the average size of the stored files like it (834 KB for a shared photo, 28 MB for a video on this Mac) until its real size is known, so “only in iCloud”, the percentage and the time left are realistic.
+
 ## 1.4.13
 
 - **Shared albums are backed up.** An *Entire Library* backup now also takes the items of the shared albums you follow whose original is not in your library — other people's photos, or yours since deleted (8,110 of 18,083 shared items on this Mac). A shared copy of one of your own photos, a reduced version of an original the Vault already has, is left out: it has the original's capture time to the millisecond, kind and proportions. On the Photos page they stay out of the library, as in Photos, and are under *Shared Albums* and in their albums.

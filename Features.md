@@ -38,7 +38,8 @@ Photos Vault is the durable archive underneath it.
 - **Progress you can read**: the Overview shows your photos on their way — iCloud → this
   Mac → each copy — with what is still only in iCloud (Photos downloads it first), what is
   ready to send, each copy's share already backed up, the download and upload speeds and
-  the time left. Each file in flight shows its speed (or its iCloud download) and a
+  the time left. Files Photos gives no size for until they are downloaded (shared albums'
+  items) count at the average size of those like them already stored. Each file in flight shows its speed (or its iCloud download) and a
   milestone track — read, copy, verify, done. Each family member's progress and speed on
   every copy are in the Vault section.
 - **Problems, not mysteries**: files that failed after several attempts are listed with the

@@ -56,7 +56,9 @@ Backups run automatically while the app is open. The **Overview** shows one line
 tells you where you stand — *Fully Protected*, *Protected on 1 of 2 Copies*, *No Storage
 Copy Connected* — and your photos on their way: **iCloud → This Mac → each copy**, with
 what is still only in iCloud (Photos has to download it before the Mac can send it), the
-speeds on the arrows, each copy's percentage and the time left. Below, the files being
+speeds on the arrows, each copy's percentage and the time left. These are estimates, marked
+“≈”: Photos gives no size for a shared album's item until it is downloaded, so those count
+at the average size of the ones already stored. Below, the files being
 copied, a few at a time, each with its speed. Close the window: the Dock icon goes away
 and the app keeps going from the menu bar icon next to the clock, which shows the
 percentage while a backup runs. Settings → General → *Open Photos Vault at login* makes
