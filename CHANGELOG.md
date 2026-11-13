@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.31
+
+- **A Mac joining the Vault sees everyone's photos as protected again.** 1.4.29 stopped accepting unsigned journal lines and had each Mac republish its old ones, signed, at the end of its journal. But the lines that followed them — “this file has this hash”, “this object is verified on the copy” — are read before those copies, when the file is not known yet, and had no effect: replayed on this Vault's real journals, a Mac joining would have seen Anthony at 14,361 of 106,914 files. Lines about a file or an object are now applied again, in their order, when that file or object is announced late; a catalog that already met the problem is repaired once (on that replay: 106,913 of 106,914). Very likely also why Sophie's Mac showed Anthony at 99 % (52 files): the repair runs there too.
+- **No more Browse folder on a NAS.** On an SMB share, macOS stores a link as a small “XSym” text file that only the Mac that made it sees as a link — so 1.4.25's check, made on that Mac, passed, and Browse/ filled again with files nothing opens. Browse is now off on every SMB share, decided from the share itself, and the Vault section no longer shows Browse counts (“catching up”) for such a copy. On a NAS, browse with the Photos page.
+
 ## 1.4.30
 
 - **The same 100 % on every Mac.** Files a Mac sets aside (iCloud would not send them) or skips are now announced in its journal: the other Macs count them out of that member's progress too. Sophie's Mac showed Anthony at 99 % — 106,910 of 106,914 files — for the 4 Live Photo videos his Mac had set aside; it now shows 100 %. Those files are not listed in the other Macs' Problems (it is not their business), and if the Mac they belong to stores one after all, it counts as protected everywhere. Files set aside before this version are announced once. Older versions simply ignore the new line.

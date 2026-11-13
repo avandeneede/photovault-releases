@@ -119,8 +119,9 @@ Photos Vault is the durable archive underneath it.
 - A `Browse/` folder on each copy shows the archive as `Anthony/2024/03/IMG_1023.HEIC` —
   one folder per family member with only their own photos; links, not copies, so it costs
   nothing. Live Photo pairs sit side by side. Files open in Finder, Quick Look, Preview
-  and Photos. A disk or share without real links gets none: exFAT, and NAS shares that store
-  a link as a small “XSym” text file nothing can open.
+  and Photos. A disk or share without real links gets none: exFAT, and SMB shares (a NAS),
+  where macOS stores a link as a small “XSym” text file nothing can open — on a NAS, browse
+  with the Photos page instead.
 - **Browse integrity**: the Vault view shows, per member and per copy, how many protected
   files are in their folder; *Check Browse Folder* (right-click a copy) verifies every
   link on disk, relinks what is missing and reports per member.
