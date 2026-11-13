@@ -145,7 +145,9 @@ Photos Vault is the durable archive underneath it.
 - **Transport**: HTTPS with certificate pinning to a Vault Service; tokens in the Keychain.
 - **App lock**: optional Touch ID or password to open the window.
 - **Signed journals**: every Mac signs what it writes (Ed25519); a line another Mac cannot
-  verify is ignored. A Vault Service accepts a replacement of an existing file only from
+  verify is ignored — no unsigned line is accepted at all, and a line in one Mac's journal
+  that claims another Mac is refused. Lines a Mac wrote before signatures existed are signed
+  by that Mac and published again, so a Mac joining later still learns them. A Vault Service accepts a replacement of an existing file only from
   an owner or admin.
 - **Optional media encryption**, chosen when a Vault is created: AES-256-GCM in
   authenticated chunks, key derived from a family passphrase (PBKDF2-SHA256) and kept in

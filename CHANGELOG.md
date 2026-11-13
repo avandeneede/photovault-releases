@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.29
+
+- **No unsigned journal line is accepted any more.** Lines written before journals were signed (before 1.2.0) were still accepted, as long as their Mac had not yet been seen signing — so someone able to write a copy could slip unsigned lines at the start of the owner's journal and a Mac joining later took them for the owner's: claiming other members' photos in the owner's name, for instance. Every unsigned line is now refused. This Mac's own old lines — 164,955 here — are signed by it, with the same content, and written once more, signed, to the copies that hold them (84 MB on this NAS, once); a Mac joining later learns that history from them. Macs that already know those lines change nothing.
+
 ## 1.4.28
 
 - **Security fix for 1.4.25–1.4.27.** To keep NAS recycle bins empty, those versions emptied a file before deleting or replacing it on a copy — with a call that follows symbolic links. Someone able to write to a copy could plant a link among its partial files pointing at a file of this Mac (the catalog, say), and the next clean-up would have emptied that file. Files are now emptied only when they are regular files, never through a link; the link itself is deleted, as before 1.4.25. On a Synology share like this one, links show up as plain files and were not followed; a USB disk could have carried real ones.
