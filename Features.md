@@ -168,8 +168,10 @@ Photos Vault is the durable archive underneath it.
   or search it.
 - Notifications when a copy is connected, up to date or disconnected, and when something
   needs you. Optional: pause on battery, limit copy speed.
-- Updates: checked at every launch and hourly; a newer version is proposed as soon as it
-  exists. Available in English and French.
+- Updates: checked at every launch and hourly, downloaded in the background and installed
+  as soon as no file is moving (the app relaunches by itself, within the hour at most) — it
+  no longer waits for a quit that a menu bar app hardly ever gets. Available in English and
+  French.
 
 ## What it never does
 

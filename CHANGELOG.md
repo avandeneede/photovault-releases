@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.32
+
+- **Updates install by themselves again.** An update downloaded in the background was installed when the app quit — and Photos Vault lives in the menu bar and hardly ever quits (⌘Q only closes it there since 1.4.22). Updates waited for days, until Sparkle could no longer resume them: “Failed to resume installing update” on Sophie's Mac, stuck on 1.4.30. A downloaded update is now installed as soon as no file is moving — within the hour at most — and the app relaunches by itself.
+
 ## 1.4.31
 
 - **A Mac joining the Vault sees everyone's photos as protected again.** 1.4.29 stopped accepting unsigned journal lines and had each Mac republish its old ones, signed, at the end of its journal. But the lines that followed them — “this file has this hash”, “this object is verified on the copy” — are read before those copies, when the file is not known yet, and had no effect: replayed on this Vault's real journals, a Mac joining would have seen Anthony at 14,361 of 106,914 files. Lines about a file or an object are now applied again, in their order, when that file or object is announced late; a catalog that already met the problem is repaired once (on that replay: 106,913 of 106,914). Very likely also why Sophie's Mac showed Anthony at 99 % (52 files): the repair runs there too.
