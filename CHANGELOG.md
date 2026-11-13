@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.21
+
+- **After the first backup: no more percentages, a shield with a check mark.** Percentages are for the first backup of a copy, which takes hours. Once a copy has held all your photos, new ones are routine: the menu bar icon turns and shows how many new items are on their way, the Overview says *Backing Up New Items* and lists the files being sent — then **Vault Synchronized**, with a checked shield, in the window and in the menu bar. Each copy remembers when its first backup was done; a new copy gets percentages again until it is full.
+- **“Synchronized” no longer waits for other members' Macs.** On this Mac the copy said *Synced 2 months ago* and the app *Backing Up* for good: 15,473 of Sophie's files, which only her Mac can send, counted as work left. A copy is now up to date as soon as this Mac has nothing left to put on it; those files are mentioned in one line (“… files from other members' Macs are still on their way”) and no longer counted as *items waiting* on the copy, nor in the *connected — synchronizing N items* notification.
+- **Back on the NAS's network, new photos are looked for at once** — when the share mounts — on top of being picked up as they arrive in Photos.
+
 ## 1.4.20
 
 - **A backup reaches 100 % by itself.** A file iCloud keeps not sending used to end in *Needs attention* after five attempts, and stayed there: the backup sat at 99 % until you skipped it by hand — on this Mac, 4 Live Photo videos of shared albums whose photos are in the Vault. Such a file is now set aside automatically: out of what is left to do, still listed in **Problems** (“Set aside after 5 attempts: iCloud sent nothing in 5 min…”) with *Retry* and *Show in Photos*. The 4 already waiting are set aside at launch. Only this case is: a copy that refuses a file, or a hidden photo Photos will not hand over while its album is locked, still needs you. When everything else is protected, the Overview says how many files were set aside instead of claiming every original.

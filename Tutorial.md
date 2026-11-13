@@ -53,15 +53,24 @@ and **Choose…**, which opens **Library → Selection**. There:
 ## 4. Let it run
 
 Backups run automatically while the app is open. The **Overview** shows one line that
-tells you where you stand — *Fully Protected*, *Protected on 1 of 2 Copies*, *No Storage
-Copy Connected* — and your photos on their way: **iCloud → This Mac → each copy**, with
+tells you where you stand — *Vault Synchronized*, *Protected on 1 of 2 Copies*, *No Storage
+Copy Connected* — and, during the first backup, your photos on their way: **iCloud → This Mac → each copy**, with
 what is still only in iCloud (Photos has to download it before the Mac can send it), the
 speeds on the arrows, each copy's percentage and the time left. These are estimates, marked
 “≈”: Photos gives no size for a shared album's item until it is downloaded, so those count
 at the average size of the ones already stored. Below, the files being
 copied, a few at a time, each with its speed. Close the window: the Dock icon goes away
 and the app keeps going from the menu bar icon next to the clock, which shows the
-percentage while a backup runs. Settings → General → *Open Photos Vault at login* makes
+percentage while a backup runs.
+
+Once a copy has held all your photos, the first backup is over and percentages go away:
+new photos — found as they arrive in Photos, and again whenever the NAS's network comes
+back — are just *new items*. The menu bar icon turns and shows how many are on their way
+(“12”), the Overview says *Backing Up New Items* and lists the files being sent; when they
+are in, the shield gets its check mark: **Vault Synchronized**. Files other family members'
+Macs have not sent yet do not hold that back — the Overview mentions them in one line.
+
+Settings → General → *Open Photos Vault at login* makes
 it permanent: after a restart there is only the icon, and it backs up on its own.
 
 Unplug the disk in the middle: the copy shows *Not connected* and the number of items

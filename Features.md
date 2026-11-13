@@ -36,13 +36,18 @@ Photos Vault is the durable archive underneath it.
   page, as in Photos, and are under *Shared Albums* and in their albums.
 - **A full pass once a day** for a library protected as a whole: it adds what Photos' change
   history does not report (new items of shared albums) or missed.
-- **Progress you can read**: the Overview shows your photos on their way — iCloud → this
+- **Progress you can read**: during a copy's first backup, the Overview shows your photos on their way — iCloud → this
   Mac → each copy — with what is still only in iCloud (Photos downloads it first), what is
   ready to send, each copy's share already backed up, the download and upload speeds and
   the time left. Files Photos gives no size for until they are downloaded (shared albums'
   items) count at the average size of those like them already stored. Each file in flight shows its speed (or its iCloud download) and a
   milestone track — read, copy, verify, done. Each family member's progress and speed on
   every copy are in the Vault section.
+- **Then just “synchronized”**: once a copy has held all your photos, new ones are routine — no
+  percentages. The menu bar icon shows how many new items are on their way, the Overview what is
+  being sent, then a shield with a check mark: *Vault Synchronized*. Other members' files their
+  Macs have not sent yet do not hold it back (mentioned in one line). Joining the NAS's network
+  looks for new photos at once.
 - **Problems, not mysteries**: files that failed after several attempts are listed with the
   reason; retry or skip them. Files that are skipped stay out of the counts. A file iCloud
   never sends (nothing for minutes, then a “network” error while the network works) is
@@ -137,9 +142,9 @@ Photos Vault is the durable archive underneath it.
 
 - Runs automatically. Close the window and the app becomes a menu bar icon (no Dock
   icon) that keeps backing up; open at login and it starts that way. Both are settings.
-- The menu bar shows the state at a glance (protected · backing up · no copy connected
-  · needs attention), and while a backup runs the share of your photos already on the
-  copy, with a one-click pause/resume.
+- The menu bar shows the state at a glance (synchronized · backing up · no copy connected
+  · needs attention) — during a copy's first backup the share of your photos already on
+  it, afterwards the number of new items on their way — with a one-click pause/resume.
 - Several files travel at once (four by default, adjustable): the wait for each iCloud
   download and each round trip to a NAS overlaps instead of adding up.
 - Activity keeps a history of what was stored, learnt and repaired; filter it to problems
