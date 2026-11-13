@@ -140,8 +140,8 @@ Photos Vault is the durable archive underneath it.
 
 ## Living with it
 
-- Runs automatically. Close the window and the app becomes a menu bar icon (no Dock
-  icon) that keeps backing up; open at login and it starts that way. Both are settings.
+- Runs automatically. Close the window — ⌘Q does the same — and the app becomes a menu
+  bar icon (no Dock icon) that keeps backing up (⌥⌘Q, or *Quit* in its panel, quits); open at login and it starts that way. Both are settings.
 - The menu bar shows the state at a glance (synchronized · backing up · no copy connected
   · needs attention) — during a copy's first backup the share of your photos already on
   it, afterwards the number of new items on their way — with a one-click pause/resume.

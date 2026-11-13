@@ -59,8 +59,10 @@ what is still only in iCloud (Photos has to download it before the Mac can send 
 speeds on the arrows, each copy's percentage and the time left. These are estimates, marked
 “≈”: Photos gives no size for a shared album's item until it is downloaded, so those count
 at the average size of the ones already stored. Below, the files being
-copied, a few at a time, each with its speed. Close the window: the Dock icon goes away
-and the app keeps going from the menu bar icon next to the clock, which shows the
+copied, a few at a time, each with its speed. Close the window — or press ⌘Q, which
+closes Photos Vault to the menu bar — and the Dock icon goes away while the app keeps
+going from the menu bar icon next to the clock (to really quit: ⌥⌘Q, or *Quit* in that
+icon's panel), which shows the
 percentage while a backup runs.
 
 Once a copy has held all your photos, the first backup is over and percentages go away:

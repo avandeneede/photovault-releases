@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.4.24
+
+- **Browse Your Photos in the Vault has two buttons**: *Open in Library*, in the Photos Vault window as before, and *Open in Browser*, the same page — same fresh data, just as quick — in your web browser. Its address works while Photos Vault runs, from this Mac only.
+- **Library looks like Photos**: inside the app, the page's sidebar and grid sit flush against the window, split by a hairline, instead of two floating cards on a pale background. In a browser, the page keeps its cards.
+
+## 1.4.23
+
+- Withdrawn: built from a base without 1.4.22's ⌘Q change, and published without these notes. Everything it had is in 1.4.24.
+
+## 1.4.22
+
+- **⌘Q leaves Photos Vault in the menu bar.** Quitting stopped the backup and took the icon away, when closing the app almost always means “out of my way”. ⌘Q (*Close to Menu Bar*) now closes the windows: the icon stays next to the clock and the Vault stays synchronized. To quit for real: ⌥⌘Q (*Quit Photos Vault*) or *Quit* in the icon's panel. A restart, a logout or an update still quit as before.
+
 ## 1.4.21
 
 - **After the first backup: no more percentages, a shield with a check mark.** Percentages are for the first backup of a copy, which takes hours. Once a copy has held all your photos, new ones are routine: the menu bar icon turns and shows how many new items are on their way, the Overview says *Backing Up New Items* and lists the files being sent — then **Vault Synchronized**, with a checked shield, in the window and in the menu bar. Each copy remembers when its first backup was done; a new copy gets percentages again until it is full.
