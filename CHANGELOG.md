@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.33
+
+- **Lines a Mac rejected long ago are read again, once.** Before 1.4.6, about one signature in 2,000 was taken for forged (a rounding of the time) and the line rejected — and never read again, the journal cursor being past it. Anthony's journal holds 109 such lines (28 file hashes, 22 objects, 20 verifications, 39 favourites/albums): very likely the 51 files Sophie's Mac still showed as “not yet on the copy” after 1.4.31. Each Mac now reads every other Mac's journal again from the start, once per copy: lines it already knows are skipped, those it once rejected apply now. In the part it had read before, unsigned lines are left out without a warning (they were refused and reported then); a forged line further on is still reported.
+
 ## 1.4.32
 
 - **Updates install by themselves again.** An update downloaded in the background was installed when the app quit — and Photos Vault lives in the menu bar and hardly ever quits (⌘Q only closes it there since 1.4.22). Updates waited for days, until Sparkle could no longer resume them: “Failed to resume installing update” on Sophie's Mac, stuck on 1.4.30. A downloaded update is now installed as soon as no file is moving — within the hour at most — and the app relaunches by itself.
