@@ -93,7 +93,7 @@ Photos Vault is the durable archive underneath it.
   media types (Videos, Selfies, Live Photos, Portrait, Panoramas, Slo-mo, Time-lapse,
   Bursts, Screenshots, RAW…), Hidden behind a confirmation, and *Removed from Photos*:
   what was deleted from Photos since it was backed up, still in the Vault — with a viewer
-  that plays videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open** (or
+  that plays videos and Live Photos. Overview → *Browse Your Photos in the Vault* → **Open in Library** (or
   right-click a copy → *Open Photos Page*) shows it in **Library**, served from this Mac: the list comes from the catalog, thumbnails from the previews Photos keeps on the
   Mac, and only the originals you open are read from the copy — quick even on a slow NAS.
   There, the viewer's *Show in Photos* opens the item in Photos (macOS asks once whether
@@ -140,8 +140,8 @@ Photos Vault is the durable archive underneath it.
 
 ## Living with it
 
-- Runs automatically. Close the window — ⌘Q does the same — and the app becomes a menu
-  bar icon (no Dock icon) that keeps backing up (⌥⌘Q, or *Quit* in its panel, quits); open at login and it starts that way. Both are settings.
+- Runs automatically. Close the window and the app becomes a menu bar icon (no Dock
+  icon) that keeps backing up; open at login and it starts that way. Both are settings.
 - The menu bar shows the state at a glance (synchronized · backing up · no copy connected
   · needs attention) — during a copy's first backup the share of your photos already on
   it, afterwards the number of new items on their way — with a one-click pause/resume.
