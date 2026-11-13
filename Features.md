@@ -45,8 +45,9 @@ Photos Vault is the durable archive underneath it.
   every copy are in the Vault section.
 - **Problems, not mysteries**: files that failed after several attempts are listed with the
   reason; retry or skip them. Files that are skipped stay out of the counts. A file iCloud
-  never sends (nothing for minutes, then a “network” error while the network works) is one
-  of them, not an endless “waiting for network”.
+  never sends (nothing for minutes, then a “network” error while the network works) is
+  retried five times, then set aside by itself — listed in Problems, out of the counts — so
+  a backup reaches 100 % instead of waiting for it forever.
 
 ## Storage copies
 

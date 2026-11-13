@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.20
+
+- **A backup reaches 100 % by itself.** A file iCloud keeps not sending used to end in *Needs attention* after five attempts, and stayed there: the backup sat at 99 % until you skipped it by hand — on this Mac, 4 Live Photo videos of shared albums whose photos are in the Vault. Such a file is now set aside automatically: out of what is left to do, still listed in **Problems** (“Set aside after 5 attempts: iCloud sent nothing in 5 min…”) with *Retry* and *Show in Photos*. The 4 already waiting are set aside at launch. Only this case is: a copy that refuses a file, or a hidden photo Photos will not hand over while its album is locked, still needs you. When everything else is protected, the Overview says how many files were set aside instead of claiming every original.
+
 ## 1.4.19
 
 - **Show in Photos.** From **Problems** (button, right-click, or double-click a row) and from the viewer in **Library**, Photos Vault opens the item in Photos — to check whether a Live Photo still plays before you retry or skip it, or simply to find a photo there. The first time, macOS asks whether Photos Vault may control Photos. It works for items of this Mac's Photos library; another member's file, or a photo deleted from Photos, has no such button. The page on the copy, opened in a browser without the app, does not show it.

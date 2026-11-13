@@ -148,7 +148,7 @@ address, the token, and the certificate fingerprint the service printed.
 | *Full* | The disk has no room left | Free space or add a bigger copy; other copies keep working. |
 | *Needs attention* on a copy | Wrong passphrase, wrong Vault, rejected token, changed certificate | Read the detail on the row; usually enter the passphrase or re-add the copy. |
 | A file in **Problems** | Photos could not hand it over, or the copy refused it | Retry later; skip if the item is gone for good. |
-| *iCloud sent nothing in 5 min* in **Problems** | iCloud no longer serves that file — typically the video of a Live Photo in a shared album | *Show in Photos* (double-click the row): if it plays there, *Retry*; if not, *Skip* (the photo itself is usually already in the Vault). |
+| *Set aside after 5 attempts: iCloud sent nothing in 5 min* in **Problems** | iCloud no longer serves that file — typically the video of a Live Photo in a shared album. The backup set it aside by itself: it no longer counts, so the copy can reach 100 % | Nothing. To try again, *Show in Photos* (double-click the row): if it plays there, *Retry*. |
 | *Photos no longer remembers what changed* | The Mac was away too long | Library → Entire Library, once. |
 | *… lines in other members' journals were rejected* | A line claims to come from another member's Mac but its signature does not match | Nothing: those lines are ignored. If the number keeps growing, check who can write to the share. |
 
