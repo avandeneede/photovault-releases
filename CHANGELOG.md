@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.30
+
+- **The same 100 % on every Mac.** Files a Mac sets aside (iCloud would not send them) or skips are now announced in its journal: the other Macs count them out of that member's progress too. Sophie's Mac showed Anthony at 99 % — 106,910 of 106,914 files — for the 4 Live Photo videos his Mac had set aside; it now shows 100 %. Those files are not listed in the other Macs' Problems (it is not their business), and if the Mac they belong to stores one after all, it counts as protected everywhere. Files set aside before this version are announced once. Older versions simply ignore the new line.
+
 ## 1.4.29
 
 - **No unsigned journal line is accepted any more.** Lines written before journals were signed (before 1.2.0) were still accepted, as long as their Mac had not yet been seen signing — so someone able to write a copy could slip unsigned lines at the start of the owner's journal and a Mac joining later took them for the owner's: claiming other members' photos in the owner's name, for instance. Every unsigned line is now refused. This Mac's own old lines — 164,955 here — are signed by it, with the same content, and written once more, signed, to the copies that hold them (84 MB on this NAS, once); a Mac joining later learns that history from them. Macs that already know those lines change nothing.
