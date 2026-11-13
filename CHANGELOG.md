@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.26
+
+- **Duplicates are no longer uploaded to find out they are duplicates.** A file was hashed while it was sent to the copy, so one the copy already held went up whole and was then dropped — 43 GB from a family member's Mac on this Vault, at Wi-Fi speed. A file whose size matches a stored one is now read to the Mac first and hashed there; if the copy has those bytes, nothing is sent. Otherwise the local file is sent: still one read from Photos or iCloud.
+- **Journal lines in the wrong file are refused.** Each Mac writes only its own journal on a copy; a line found in one Mac's journal but claiming to come from another was accepted. Such lines are now refused and counted in Activity's warning about rejected lines (none on this Vault: 922,273 lines checked).
+- **Away from home, no automatic connection to the NAS.** A NAS share was mounted silently whenever possible — and away from home it was still tried every 15 minutes, offering the saved password's challenge response to whatever answered for that name on a café's or hotel's network. Automatic connection now happens only when the NAS announces itself over Bonjour, i.e. on its own network; *Connect* still works anywhere.
+
 ## 1.4.25
 
 - **Quiet at rest.** A Mac with nothing left to send used half a core: the shield on the Overview pulsed for ever (the backup loop is always “running” in automatic mode), a pass ran every 3 s — reading every copy over the network, exchanging journals, re-checking the Browse folder — and statistics were recounted every 15 s. Now the shield moves only while files move; a pass that finds nothing waits longer before the next (up to 5 minutes) and any change — new photos, a copy connecting, *Retry* — starts one at once; the Browse folder is checked once per connection; statistics are recounted when something changed; and in the menu bar the app refreshes every 30 s instead of 3, so a NAS can sleep. Measured on this Mac, window open: 23 % of a core → 1 %.

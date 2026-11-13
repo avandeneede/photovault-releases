@@ -78,7 +78,8 @@ Photos Vault is the durable archive underneath it.
 - **Discovery**: copies on connected disks and shares are found automatically; file
   servers on the local network are listed with a one-click Connect.
 - **Reconnects by itself**: a copy on a NAS share is mounted silently, with the password
-  saved in the Keychain, whenever its server is on the network — no trip to Finder. If the
+  saved in the Keychain, whenever its server is on the network (announced over Bonjour: away
+  from home it never offers that password to whoever answers) — no trip to Finder. If the
   NAS refuses that password, the app stops trying (so the account is never locked) and the
   copy's *Connect* button asks for it once.
 - **Vault Service**: a Mac can serve a copy over HTTPS (`photosvault serve`, or as a
@@ -92,6 +93,9 @@ Photos Vault is the durable archive underneath it.
 
 - Every original is stored **once per copy**, whoever it belongs to and however many times
   it appears. Identity is the file's SHA-256, never its name.
+- **Checked before it is sent**: a file whose size matches one already stored is hashed on
+  the Mac first, and not uploaded at all if the copy already holds those bytes (a family
+  member's Mac had sent 43 GB of photos the NAS already had, only to drop them).
 - Live Photos, RAW+JPEG pairs and edits' adjustment data are each protected as their own
   original resources.
 
