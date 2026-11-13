@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.27
+
+- **The Photos page is no longer rewritten just for its date.** 1.4.25 rewrote the page's data only when it changed — but its data carries the time it was built, so every build still differed: twice per build, 16.5 MB each time on this NAS (now 0 bytes in its recycle bin, but still sent). The build time is now left out of the comparison: a page whose photos did not change is not rewritten, and its *Updated* date is that of its last real change.
+
 ## 1.4.26
 
 - **Duplicates are no longer uploaded to find out they are duplicates.** A file was hashed while it was sent to the copy, so one the copy already held went up whole and was then dropped — 43 GB from a family member's Mac on this Vault, at Wi-Fi speed. A file whose size matches a stored one is now read to the Mac first and hashed there; if the copy has those bytes, nothing is sent. Otherwise the local file is sent: still one read from Photos or iCloud.
