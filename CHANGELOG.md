@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.28
+
+- **Security fix for 1.4.25–1.4.27.** To keep NAS recycle bins empty, those versions emptied a file before deleting or replacing it on a copy — with a call that follows symbolic links. Someone able to write to a copy could plant a link among its partial files pointing at a file of this Mac (the catalog, say), and the next clean-up would have emptied that file. Files are now emptied only when they are regular files, never through a link; the link itself is deleted, as before 1.4.25. On a Synology share like this one, links show up as plain files and were not followed; a USB disk could have carried real ones.
+
 ## 1.4.27
 
 - **The Photos page is no longer rewritten just for its date.** 1.4.25 rewrote the page's data only when it changed — but its data carries the time it was built, so every build still differed: twice per build, 16.5 MB each time on this NAS (now 0 bytes in its recycle bin, but still sent). The build time is now left out of the comparison: a page whose photos did not change is not rewritten, and its *Updated* date is that of its last real change.
