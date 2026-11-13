@@ -63,7 +63,16 @@ Photos Vault is the durable archive underneath it.
   itself. Full, read-only or damaged copies are the only ones that need attention.
 - **Copies fill from each other**: with a NAS and an external disk, the disk fills from the
   NAS instead of downloading from iCloud again. Sources are chosen in order: a local copy,
-  Photos if the original is cached on the Mac, a copy over the network, then iCloud.
+  Photos if the original is on the Mac right now (asked at that moment: Optimize Mac Storage
+  sends originals back to iCloud), a copy over the network, then iCloud. A NAS that connects
+  while a disk fills becomes its source within a minute.
+- **Kind to NAS recycle bins**: a NAS that keeps deleted files (Synology's `#recycle`) kept
+  every partial, duplicate upload and replaced file the app deleted — 149 GiB on one NAS.
+  Files are now emptied before they are deleted or replaced, and the Photos page is only
+  rewritten when it changed.
+- **Quiet at rest**: when there is nothing to send, the backup checks less and less often (up
+  to every 5 minutes) and starts at once when something happens — new photos, a copy
+  connecting, *Retry*. In the menu bar it refreshes every 30 s, letting a NAS sleep.
 - **Self-healing**: *Verify Integrity* re-reads a copy; a damaged file is repaired from a
   healthy copy. A damaged *source* is caught before it can spread.
 - **Discovery**: copies on connected disks and shares are found automatically; file
@@ -106,7 +115,8 @@ Photos Vault is the durable archive underneath it.
 - A `Browse/` folder on each copy shows the archive as `Anthony/2024/03/IMG_1023.HEIC` —
   one folder per family member with only their own photos; links, not copies, so it costs
   nothing. Live Photo pairs sit side by side. Files open in Finder, Quick Look, Preview
-  and Photos.
+  and Photos. A disk or share without real links gets none: exFAT, and NAS shares that store
+  a link as a small “XSym” text file nothing can open.
 - **Browse integrity**: the Vault view shows, per member and per copy, how many protected
   files are in their folder; *Check Browse Folder* (right-click a copy) verifies every
   link on disk, relinks what is missing and reports per member.

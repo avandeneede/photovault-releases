@@ -146,7 +146,9 @@ address, the token, and the certificate fingerprint the service printed.
 
 1. Add the NAS share as the first copy; let the first backup run overnight.
 2. Add an external disk as the second copy: it fills **from the NAS**, not from iCloud, at
-   disk speed. Keep it in a drawer; plug it in once a month — it catches up in minutes
+   disk speed — keep the NAS reachable while it does. Each copy holds the whole Vault: pick a
+   disk well above *Size per Copy* in the Overview (twice is comfortable, the library grows),
+   formatted APFS (exFAT cannot hold the Browse folder). Keep it in a drawer; plug it in once a month — it catches up in minutes
    and tells you when it is up to date.
 3. If the NAS dies, the disk holds everything; if the disk is stolen, the NAS does. A new
    NAS is just a new copy: it fills from the disk.

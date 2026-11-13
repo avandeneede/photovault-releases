@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.25
+
+- **Quiet at rest.** A Mac with nothing left to send used half a core: the shield on the Overview pulsed for ever (the backup loop is always “running” in automatic mode), a pass ran every 3 s — reading every copy over the network, exchanging journals, re-checking the Browse folder — and statistics were recounted every 15 s. Now the shield moves only while files move; a pass that finds nothing waits longer before the next (up to 5 minutes) and any change — new photos, a copy connecting, *Retry* — starts one at once; the Browse folder is checked once per connection; statistics are recounted when something changed; and in the menu bar the app refreshes every 30 s instead of 3, so a NAS can sleep. Measured on this Mac, window open: 23 % of a core → 1 %.
+- **No more NAS recycle bin full of backups.** A Synology keeps what a client deletes or replaces in `#recycle`: 149 GiB here — partial uploads, duplicates uploaded then dropped, replaced files and 430 old versions of the Photos page in 5 days. Files are now emptied before being deleted or replaced, so only 0-byte entries reach the bin, and the Photos page is only rewritten when its content changed (it never was “unchanged”: its data was written with keys in a random order).
+- **A new disk fills from the NAS.** Photos' “this original is on the Mac” was the scan's answer, stale once Optimize Mac Storage sends originals back to iCloud (50,922 such files here): when the NAS holds the file, Photos is now asked at that moment, and the NAS used unless the original really is local. A NAS that connects while a disk fills becomes its source within a minute instead of at the next pass.
+- **No Browse folder of unopenable files.** On a NAS share that stores links as small “XSym” text files, Browse/ filled with files nothing can open, and 238 names were retried on every pass. Such a share is now detected at the first link and gets no Browse folder, like an exFAT disk.
+
 ## 1.4.24
 
 - **Browse Your Photos in the Vault has two buttons**: *Open in Library*, in the Photos Vault window as before, and *Open in Browser*, the same page — same fresh data, just as quick — in your web browser. Its address works while Photos Vault runs, from this Mac only.
